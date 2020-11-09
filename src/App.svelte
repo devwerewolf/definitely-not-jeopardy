@@ -5,14 +5,30 @@
 
 
 <main class="app">
-	<GameBoard/>
-	<ScoreBoard/>
+	<h1>Welcome to [definitely not] Jeopardy!</h1>
+	
+	<section class="game">
+		<GameBoard/>
+		<ScoreBoard/>
+	</section>
 </main>
 
 
-<style>
+<style lang="scss">
 	main {
-		display: grid;
-		grid-template-columns: 1fr 5rem;
+		background-color: #060CE9;
+		
+		.game {
+			height: calc(100% - 3rem);
+			display: grid;
+			grid-template-columns: 80% 1fr;
+		}
+	}
+	
+	
+	h1 {
+		color: white;
+		font-size: 2rem;
+		text-align: center;
 	}
 </style>

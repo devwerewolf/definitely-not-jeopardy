@@ -25,7 +25,7 @@
 </script>
 
 
-<main class="game-board-tile" on:click={showClue}>
+<main class="game-board-clue" on:click={showClue}>
   {#if hidden}
     {clue.value}
   {:else}
@@ -38,7 +38,9 @@
 
 <style>
   main {
-    background-color: orange;
+    background-color: skyblue;
+    border-radius: 2px;
+    box-shadow: 5px 10px 8px;
     cursor: pointer;
   }
 </style>

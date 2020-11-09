@@ -10,6 +10,9 @@
 
 <style>
   main {
-    background-color: blue;
+    background-color: orange;
+    box-shadow: 5px 10px 8px;
+    border-radius: 2px;
+    text-align: center;
   }
 </style>

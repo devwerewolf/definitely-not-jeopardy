@@ -14,7 +14,6 @@
   });
 </script>
 
-
 <main class="game-board">
   {#await categories.fetch()}
     <p>Fetching categories...</p>
@@ -40,10 +39,13 @@
   main {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    padding: 1rem;
     
     .category-column {
       display: grid;
       grid-template-rows: 3rem repeat(5, 1fr);
+      gap: 1rem;
     }
   }
 </style>
